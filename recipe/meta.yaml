@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "sim-tools" %}
 {% set version = "0.6.1" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sim_tools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sim_tools-{{ version }}.tar.gz
   sha256: 9763e2a856a2fdc5bb3ba65ffec7a94ee39a110afa397f31799ea15e5b1ed088
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - matplotlib-base >=3.1.3
     - numpy >=1.18.1
     - pandas >=2.0.0
@@ -34,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://tommonks.github.io/sim-tools
