@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "sim-tools" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sim_tools-{{ version }}.tar.gz
-  sha256: 9763e2a856a2fdc5bb3ba65ffec7a94ee39a110afa397f31799ea15e5b1ed088
+  sha256: 9b9ed0233c1acec46897b2847cf6f569faec76e94f845440a79e839c1d80b0ad
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,7 +26,8 @@ requirements:
     - numpy >=1.18.1
     - pandas >=2.0.0
     - rich >=13.7.1
-    - scikit-learn >=1.0.0    
+    - scikit-learn >=1.0.0
+    - plotly >=6.0.0
 
 test:
   imports:
