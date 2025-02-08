@@ -27,6 +27,7 @@ requirements:
     - pandas >=2.0.0
     - rich >=13.7.1
     - scikit-learn >=1.0.0
+    - plotly >=6.0.0
 
 test:
   imports:
