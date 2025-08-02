@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "sim-tools" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sim_tools-{{ version }}.tar.gz
-  sha256: 019d5018fcd962a1d0f3d6fdb48c35c9d8898bf926320db77d01943985d9f9be
+  sha256: c7af12d8de652791aecd34dad911f4e9d80345fdf0d38a2e174527d1790333be
 
 build:
   noarch: python
