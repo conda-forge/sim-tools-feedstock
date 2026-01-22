@@ -39,9 +39,9 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://tommonks.github.io/sim-tools
+  home: https://sim-tools.github.io/sim-tools
   summary: Simulation Tools for Education and Practice
-  dev_url: https://github.com/TomMonks/sim-tools
+  dev_url: https://sim-tools.com/TomMonks/sim-tools
   license: MIT
   license_file: LICENSE
 
