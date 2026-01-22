@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "sim-tools" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sim_tools-{{ version }}.tar.gz
-  sha256: 9762f5603aa55814742c8a1ffc5212cc3a9993a563dc519b42c529e8e74611aa
+  sha256: 5b1219fc1b1a2122aedfb3041f9f32b2cb39e307b4115775bd81852844916dbe
 
 build:
   noarch: python
@@ -39,9 +39,9 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://tommonks.github.io/sim-tools
+  home: https://sim-tools.github.io/sim-tools
   summary: Simulation Tools for Education and Practice
-  dev_url: https://github.com/TomMonks/sim-tools
+  dev_url: https://sim-tools.com/TomMonks/sim-tools
   license: MIT
   license_file: LICENSE
 
