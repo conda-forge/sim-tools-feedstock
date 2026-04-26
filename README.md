@@ -3,23 +3,22 @@ About sim-tools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sim-tools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://tommonks.github.io/sim-tools
+Home: https://sim-tools.github.io/sim-tools
 
 Package license: MIT
 
 Summary: Simulation Tools for Education and Practice
 
-Development: https://github.com/TomMonks/sim-tools
+Development: https://sim-tools.com/TomMonks/sim-tools
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22163&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sim-tools-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
